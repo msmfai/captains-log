@@ -1,0 +1,22 @@
+lake_root = "/path/to/private-state/lake"
+state_root = "/path/to/private-state"
+clickhouse_url = "http://127.0.0.1:8123"
+api_bind = "127.0.0.1:32145"
+manifest_only = false
+
+# Optional compatibility devices are selected in the app. Protocol details and credentials belong
+# to their leaf adapters and never appear in this product-level configuration. Empty values are the
+# clean-install default; the independent Android recorder transfer remains available.
+source_adapter_id = ""
+source_adapter_binary = ""
+# selected_source_id = "adapter-owned-stable-id"
+allow_source_pairing = false
+scan_interval_seconds = 30
+scan_duration_ms = 8000
+source_idle_timeout_ms = 8000
+source_sync_interval_seconds = 60
+
+# IANA timezone used for spoken dates and times. Fresh installs detect the Mac timezone.
+timezone = "Etc/UTC"
+watched_folders = []
+usb_folders = []
