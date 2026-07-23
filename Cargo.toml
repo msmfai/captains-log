@@ -1,0 +1,57 @@
+[workspace]
+resolver = "2"
+members = [
+  "crates/personal-audio-lake-contracts",
+  "crates/personal-audio-lake-pocket",
+  "crates/personal-audio-lake-bluetooth",
+  "crates/personal-audio-lake-storage",
+  "crates/personal-audio-lake-transcription",
+  "crates/personal-audio-lake-workflows",
+  "crates/personal-audio-lake-macos-actions",
+  "crates/personal-audio-lake-macos-notifications",
+  "crates/personal-audio-lake-services",
+  "crates/personal-audio-lake-app",
+  "crates/personal-audio-lake-cli",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.96"
+license = "AGPL-3.0-only"
+repository = "https://github.com/msmfai/captains-log"
+homepage = "https://github.com/msmfai/captains-log"
+
+[workspace.dependencies]
+anyhow = "1.0.103"
+block2 = "0.6.2"
+btleplug = { version = "0.12.0", features = ["serde"] }
+chrono = { version = "0.4.45", features = ["serde"] }
+chrono-tz = "0.10.4"
+clap = { version = "4.6.1", features = ["derive", "env"] }
+clickhouse = { version = "0.15.1", default-features = false, features = ["lz4", "uuid", "chrono"] }
+futures = "0.3.32"
+hex = "0.4.3"
+objc2 = "0.6.4"
+objc2-app-kit = "0.3.2"
+objc2-event-kit = "0.3.2"
+objc2-foundation = "0.3.2"
+objc2-user-notifications = "0.3.2"
+reqwest = { version = "0.13.4", default-features = false, features = ["json", "form", "query", "rustls"] }
+regex = "1.12.3"
+security-framework = "3.7.0"
+serde = { version = "1.0.228", features = ["derive"] }
+serde_json = "1.0.149"
+sha2 = "0.10.9"
+tempfile = "3.27.0"
+thiserror = "2.0.18"
+tokio = { version = "1.52.3", features = ["fs", "io-std", "io-util", "macros", "process", "rt-multi-thread", "signal", "sync", "time"] }
+toml = "0.9.8"
+tracing = "0.1.44"
+tracing-subscriber = { version = "0.3.22", features = ["env-filter", "fmt"] }
+uuid = { version = "1.23.4", features = ["serde", "v4", "v5"] }
+walkdir = "2.5.0"
+
+[profile.release]
+lto = "thin"
+strip = "symbols"

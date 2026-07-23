@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>com.smfmarin.personal-audio-lake.clickhouse</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>__CHCTL__</string><string>local</string><string>server</string><string>start</string>
+    <string>--name</string><string>personal-audio-lake</string>
+    <string>--http-port</string><string>8123</string>
+    <string>--tcp-port</string><string>9000</string>
+    <string>--foreground</string>
+    <string>--</string>
+    <string>--send_crash_reports.enabled=false</string>
+    <string>--send_logical_errors=false</string>
+    <string>--background_schedule_pool_size=32</string>
+    <string>--disable_internal_dns_cache=1</string>
+    <string>--logger.level=warning</string>
+  </array>
+  <key>WorkingDirectory</key><string>__STATE_ROOT__/lake</string>
+  <key>RunAtLoad</key><true/>
+  <key>KeepAlive</key><true/>
+  <key>ProcessType</key><string>Background</string>
+  <key>StandardOutPath</key><string>__STATE_ROOT__/logs/clickhouse.log</string>
+  <key>StandardErrorPath</key><string>__STATE_ROOT__/logs/clickhouse.error.log</string>
+</dict>
+</plist>

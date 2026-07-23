@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>CFBundleDevelopmentRegion</key><string>en</string>
+  <key>CFBundleDisplayName</key><string>Captain’s Log</string>
+  <key>CFBundleExecutable</key><string>PersonalAudioLake</string>
+  <key>CFBundleIdentifier</key><string>com.smfmarin.personal-audio-lake</string>
+  <key>CFBundleInfoDictionaryVersion</key><string>6.0</string>
+  <key>CFBundleName</key><string>Captain’s Log</string>
+  <key>CFBundlePackageType</key><string>APPL</string>
+  <key>CFBundleShortVersionString</key><string>0.1.0</string>
+  <key>CFBundleVersion</key><string>1</string>
+  <key>LSMinimumSystemVersion</key><string>14.0</string>
+  <key>LSUIElement</key><true/>
+  <key>NSBluetoothAlwaysUsageDescription</key>
+  <string>Captain’s Log connects to a recorder you approve and privately transfers recordings to this Mac.</string>
+  <key>NSCalendarsFullAccessUsageDescription</key>
+  <string>Captain’s Log adds, updates, and removes reversible calendar events inferred by your private on-device automations.</string>
+  <key>NSRemindersFullAccessUsageDescription</key>
+  <string>Captain’s Log adds and removes reminders inferred by your private on-device automations, and lets you correct or undo them.</string>
+  <key>NSAppleEventsUsageDescription</key>
+  <string>Captain’s Log creates and removes reversible items in Notes, Mail, and Contacts when one of your private on-device automations requests it.</string>
+</dict>
+</plist>

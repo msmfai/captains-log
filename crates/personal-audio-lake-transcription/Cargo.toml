@@ -1,0 +1,21 @@
+[package]
+name = "personal-audio-lake-transcription"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+publish = false
+
+[dependencies]
+anyhow.workspace = true
+chrono.workspace = true
+personal-audio-lake-contracts = { path = "../personal-audio-lake-contracts" }
+serde.workspace = true
+serde_json.workspace = true
+tempfile.workspace = true
+uuid.workspace = true
+
+[dev-dependencies]
+tempfile.workspace = true

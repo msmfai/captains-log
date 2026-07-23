@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>com.smfmarin.personal-audio-lake</string>
+  <key>ProgramArguments</key>
+  <array><string>__EXECUTABLE__</string><string>--server</string></array>
+  <key>RunAtLoad</key><true/>
+  <key>KeepAlive</key><true/>
+  <key>ProcessType</key><string>Background</string>
+  <key>StandardOutPath</key><string>__STATE_ROOT__/logs/supervisor.log</string>
+  <key>StandardErrorPath</key><string>__STATE_ROOT__/logs/supervisor.error.log</string>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PATH</key><string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin</string>
+    <key>PERSONAL_AUDIO_LAKE_WHISPER_BIN</key><string>__WHISPER_BIN__</string>
+    <key>PERSONAL_AUDIO_LAKE_FFMPEG_BIN</key><string>/opt/homebrew/bin/ffmpeg</string>
+    <key>PERSONAL_AUDIO_LAKE_WHISPER_MODEL</key><string>__STATE_ROOT__/models/ggml-base.en.bin</string>
+  </dict>
+</dict>
+</plist>
