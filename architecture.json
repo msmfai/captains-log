@@ -1,0 +1,17 @@
+{
+  "root": "personal-audio-lake-contracts",
+  "rule": "Every workspace crate except the root may depend on personal-audio-lake-contracts and no other workspace crate.",
+  "message_transport": "Versioned NDJSON envelopes over process stdio; the supervisor journals before routing.",
+  "leaves": [
+    "personal-audio-lake-pocket",
+    "personal-audio-lake-bluetooth",
+    "personal-audio-lake-storage",
+    "personal-audio-lake-transcription",
+    "personal-audio-lake-workflows",
+    "personal-audio-lake-macos-actions",
+    "personal-audio-lake-macos-notifications",
+    "personal-audio-lake-services",
+    "personal-audio-lake-app",
+    "personal-audio-lake-cli"
+  ]
+}

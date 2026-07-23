@@ -1,0 +1,25 @@
+[package]
+name = "personal-audio-lake-macos-actions"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+publish = false
+
+[dependencies]
+anyhow.workspace = true
+block2.workspace = true
+chrono.workspace = true
+chrono-tz.workspace = true
+clap.workspace = true
+objc2.workspace = true
+objc2-event-kit.workspace = true
+objc2-foundation.workspace = true
+personal-audio-lake-contracts = { path = "../personal-audio-lake-contracts" }
+serde_json.workspace = true
+uuid.workspace = true
+
+[dev-dependencies]
+tempfile.workspace = true

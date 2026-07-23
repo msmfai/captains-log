@@ -1,0 +1,59 @@
+# macOS and editor state
+.DS_Store
+.idea/
+.vscode/
+.fleet/
+DerivedData/
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+secrets/
+*.jks
+*.keystore
+*.p12
+*.mobileprovision
+
+# Private source and derived data
+data/
+recordings/
+transcripts/
+exports/
+lake/
+
+# Local databases, indexes, and models
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+*.parquet
+*.lance
+*.ndjson
+*.jsonl
+*.log
+*.pid
+models/
+.cache/
+target/
+dist/
+android/.gradle/
+android/local.properties
+android/**/build/
+
+# Distributable artifacts are produced outside source control
+*.aab
+*.apk
+*.dmg
+*.ipa
+*.pkg
+
+# Audio must never enter this repository
+*.aac
+*.flac
+*.m4a
+*.mp3
+*.ogg
+*.opus
+*.wav
+*.audio

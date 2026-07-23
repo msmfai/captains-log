@@ -1,0 +1,32 @@
+[package]
+name = "personal-audio-lake-app"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+publish = false
+
+[dependencies]
+anyhow.workspace = true
+block2.workspace = true
+chrono.workspace = true
+chrono-tz.workspace = true
+clap.workspace = true
+hex.workspace = true
+objc2.workspace = true
+objc2-app-kit.workspace = true
+objc2-event-kit.workspace = true
+objc2-foundation.workspace = true
+objc2-user-notifications.workspace = true
+personal-audio-lake-contracts = { path = "../personal-audio-lake-contracts" }
+serde.workspace = true
+serde_json.workspace = true
+toml.workspace = true
+uuid.workspace = true
+walkdir.workspace = true
+reqwest = { workspace = true, features = ["blocking"] }
+
+[dev-dependencies]
+tempfile.workspace = true
